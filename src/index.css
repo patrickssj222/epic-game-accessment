@@ -1,0 +1,50 @@
+html{
+    height:100%;
+}
+body {
+    margin: 0;
+    height:100%;
+    font-family: -apple-system, BlinkMacSystemFont, 'Segoe UI', 'Roboto', 'Oxygen',
+    'Ubuntu', 'Cantarell', 'Fira Sans', 'Droid Sans', 'Helvetica Neue',
+    sans-serif;
+    -webkit-font-smoothing: antialiased;
+    -moz-osx-font-smoothing: grayscale;
+
+}
+
+code {
+    font-family: source-code-pro, Menlo, Monaco, Consolas, 'Courier New',
+    monospace;
+    height:100%;
+}
+
+#root{
+    height:100%;
+}
+@font-face {
+    font-family: 'Merriweather Regular';
+    font-style: normal;
+    font-weight: normal;
+    src: local('Merriweather Regular'), url('asset/font/Merriweather-Regular.ttf') format('truetype');
+}
+
+@font-face {
+    font-family: 'Merriweather Regular Italic';
+    font-style: normal;
+    font-weight: normal;
+    src: local('Merriweather Regular Italic'), url('asset/font/Merriweather-Italic.ttf') format('truetype');
+}
+
+@font-face {
+    font-family: 'Merriweather Bold';
+    font-style: normal;
+    font-weight: normal;
+    src: local('Merriweather Bold'), url('asset/font/Merriweather-Bold.ttf') format('truetype');
+}
+
+@font-face {
+    font-family: 'Merriweather Bold Italic';
+    font-style: normal;
+    font-weight: normal;
+    src: local('Merriweather Bold Italic'), url('asset/font/Merriweather-BoldItalic.ttf') format('truetype');
+}
