@@ -28,7 +28,7 @@ export const Column = (props: Props) => {
                     return itemList[itemId].includes(searchTerm)
                 }
             }).map((itemId:string, index)=>{
-                return <div className={"column-item "+(index%2>0?"column-item-dark":"column-item-light")}>
+                return <div key={index} className={"column-item "+(index%2>0?"column-item-dark":"column-item-light")}>
                     <text>{itemList[itemId]}</text>
                     <div className={"icon-wrapper "+(index%2>0?"icon-wrapper-light":null)} onClick={()=>deleteItemHandler(itemId)}><MdClear/></div>
                 </div>

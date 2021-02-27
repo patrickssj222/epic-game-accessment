@@ -9,7 +9,6 @@ export const App = () => {
     const [item, setItem] = useState("")
     const [searchTerm, setSearchTerm] = useState("")
     const columnList = useSelector((state:ReduxState)=>Object.keys(state.reducer),shallowEqual)
-    console.log(columnList)
     const dispatch = useDispatch()
     const addItemHandler = () => {
         const id = new Date().getTime()
@@ -29,8 +28,8 @@ export const App = () => {
                             <div className={"top-control"}>
                                 <input type={"text"} placeholder={"ENTER ITEM"} onChange={(event)=>setItem(event.target.value)} value={item}/>
                                 <select value={column} onChange={(event)=>setColumn(event.target.value)} placeholder={"CHOOSE COLUMN"}>
-                                    {columnList.map((columnItem)=>{
-                                        return <option value={columnItem}>{columnItem.toUpperCase()}</option>
+                                    {columnList.map((columnItem, index)=>{
+                                        return <option key={index} value={columnItem}>{columnItem.toUpperCase()}</option>
                                     })}
                                 </select>
                             </div>
@@ -44,8 +43,8 @@ export const App = () => {
                         </div>
                         <div className={"table-wrapper"}>
                             {
-                                columnList.map((columnItem)=>{
-                                    return <Column columnName={columnItem} searchTerm={searchTerm}/>
+                                columnList.map((columnItem, index)=>{
+                                    return <Column key={index} columnName={columnItem} searchTerm={searchTerm}/>
                                 })
                             }
                         </div>
