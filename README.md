@@ -1,8 +1,8 @@
-#Epic Games Interview Assessment
-#####Author: Yun Hao
-#####Assigned by: H8tch Innovations
+# Epic Games Interview Assessment
+##### Author: Yun Hao
+##### Assigned by: H8tch Innovations
 
-###Goal
+### Goal
 <p>Replicate the following photoshop snap shot:</p>
 ![image](src/asset/Screenshot_2.png/?raw=true)
 <br/>
